@@ -1,5 +1,9 @@
 (defpackage cl-exe-template
-  (:use :cl))
+  (:use :cl)
+  (:export
+   #:entry))
+
 (in-package :cl-exe-template)
 
-;; blah blah blah.
+(defun entry ()
+  (print "Hello World!"))
